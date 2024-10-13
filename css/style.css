@@ -1,0 +1,556 @@
+
+
+.typed-cursor{
+  display: none;
+}
+#typed3 {
+display: inline-block;
+position: relative;
+
+}
+#typed3::before{
+content: "";
+bottom: 0;
+right: 0;
+width: 3px;
+height: 100%;
+background-color: #f1ecec;
+position: absolute;
+animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+  }
+
+
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+html{
+  scroll-padding: 74px;
+}
+.nav_bg{
+  background-color: rgba(0,0,0,0.8);
+ 
+}
+.nav_width{
+  width: 91%;
+  height: 91vh !important;
+
+}
+.nav_bg ul li a{
+  font-weight: 600;
+  font-size: 1.02rem;
+}
+ul li a{
+  transition: all 1s;
+}
+.offcanvas_transition
+{
+  transition: all 0s !important;
+}
+.dropdown_hover_color  a{
+  transition: all 0.4s;
+}
+.dropdown_hover_color  a:hover{
+  color: #0062d3 !important;
+  }
+  .responsive_nav a{
+    transition: all 0.5s;
+  }
+  .responsive_nav a:hover{
+    color: #0062d3 !important;
+  }
+  .name_anchor{
+    transition: all 0.3s;
+  }
+  .name_anchor:hover{
+    color: #0062d3;
+  }
+.font_size{
+    font-size: 4.5rem;
+}
+.font_size2{
+  font-size: 3rem;
+}
+.hero_info{
+
+    top: 45%;
+    text-align: center;
+}
+/* .hero_info h2{
+    position: relative;
+}
+.hero_info h2::after{
+    color: aliceblue;
+    position: absolute;
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    animation: typing 10s infinite ease-in-out;
+}
+
+@keyframes typing {
+    0% {
+      content: "D|";
+    }
+    1% {
+      content: "De|";
+    }
+    2% {
+      content: "Des|";
+    }
+    3% {
+      content: "Desi|";
+    }
+    4% {
+      content: "Desig|";
+    }
+    5% {
+      content: "Design|";
+    }
+    6% {
+      content: "Designe|";
+    }
+    7% {
+      content: "Designer|";
+    }
+    8% {
+      content: "Designer |";
+    }
+    9% {
+      content: "Designer|";
+    }
+    10% {
+      content: "Designe|";
+    }
+    20% {
+      content: "Design|";
+    }
+    21% {
+      content: "Desig|";
+    }
+    22% {
+      content: "Desi|";
+    }
+    23% {
+      content: "Des|";
+    }
+    24% {
+      content: "De|";
+    }
+    25% {
+      content: "D|";
+    }
+    26% {
+      content: "|";
+    }
+    27% {
+      content: "D|";
+    }
+    28% {
+      content: "De|";
+    }
+    29% {
+      content: "Dev|";
+    }
+    30% {
+      content: "Deve|";
+    }
+    31% {
+      content: "Devel|";
+    }
+    32% {
+      content: "Develo|";
+    }
+    33% {
+      content: "Develop|";
+    }
+    34% {
+      content: "Develope|";
+    }
+    35% {
+      content: "Developer|";
+    }
+    36% {
+      content: "Developer |";
+    }
+    37% {
+      content: "Developer|";
+    }
+    38% {
+      content: "Develope|";
+    }
+    39% {
+      content: "Develop|";
+    }
+    40% {
+      content: "Develo|";
+    }
+    41% {
+      content: "Devel|";
+    }
+    42% {
+      content: "Deve|";
+    }
+    43% {
+      content: "Dev|";
+    }
+    44% {
+      content: "De|";
+    }
+    45% {
+      content: "D|";
+    }
+    46% {
+      content: "|";
+    }
+    47% {
+      content: "D|";
+    }
+    48% {
+      content: "De|";
+    }
+    49% {
+      content: "Dev|";
+    }
+    50% {
+      content: "Deve|";
+    }
+    51% {
+      content: "Devel|";
+    }
+    52% {
+      content: "Develo|";
+    }
+    53% {
+      content: "Develop|";
+    }
+    54% {
+      content: "Develope|";
+    }
+    55% {
+      content: "Developer|";
+    }
+    56% {
+      content: "Developer |";
+    }
+    57% {
+      content: "Developer|";
+    }
+    58% {
+      content: "Develope|";
+    }
+    59% {
+      content: "Develop|";
+    }
+    60% {
+      content: "Develo|";
+    }
+    61% {
+      content: "Devel|";
+    }
+    62% {
+      content: "Deve|";
+    }
+    63% {
+      content: "Dev|";
+    }
+    64% {
+      content: "De|";
+    }
+    65% {
+      content: "D|";
+    }
+    66% {
+      content: "|";
+    }
+    67% {
+      content: "D|";
+    }
+    68% {
+      content: "De|";
+    }
+    69% {
+      content: "Dev|";
+    }
+    70% {
+      content: "Deve|";
+    }
+    71% {
+      content: "Devel|";
+    }
+    72% {
+      content: "Develo|";
+    }
+    73% {
+      content: "Develop|";
+    }
+    74% {
+      content: "Develope|";
+    }
+    75% {
+      content: "Developer|";
+    }
+    76% {
+      content: "Developer |";
+    }
+    77% {
+      content: "Developer|";
+    }
+    78% {
+      content: "Develope|";
+    }
+    79% {
+      content: "Develop|";
+    }
+    80% {
+      content: "Develo|";
+    }
+    81% {
+      content: "Devel|";
+    }
+    82% {
+      content: "Deve|";
+    }
+    83% {
+      content: "Dev|";
+    }
+    84% {
+      content: "De|";
+    }
+    85% {
+      content: "D|";
+    }
+    86% {
+      content: "|";
+    }
+    87% {
+      content: "D|";
+    }
+    88% {
+      content: "De|";
+    }
+    89% {
+      content: "Dev|";
+    }
+    90% {
+      content: "Deve|";
+    }
+    91% {
+      content: "Devel|";
+    }
+    92% {
+      content: "Develo|";
+    }
+    93% {
+      content: "Develop|";
+    }
+    94% {
+      content: "Develope|";
+    }
+    95% {
+      content: "Developer|";
+    }
+    96% {
+      content: "Developer |";
+    }
+    97% {
+      content: "Developer|";
+    }
+    98% {
+      content: "Develope|";
+    }
+    99% {
+        content: "Develop|";
+      }
+    100% {
+      content: "Develo|";
+    }
+  } */
+/* @keyframes home_animation{
+    1%{
+        content: "f|";
+    }
+    2%{
+        content: "fr|";
+    }
+    3%{
+        content: "fre|";
+    }
+    4%{
+        content: "free|";
+    }
+    5%{
+        content: "free l|";
+    }
+    6%{
+        content: "free la|";
+    }
+    7%{
+        content: "free lan|";
+    }
+    7%{
+        content: "free lanc|";
+    }
+    8%{
+        content: "free lance|";
+    }
+    9%{
+        content: "free lancer|";
+    }
+
+} */
+
+
+
+
+.under_line{
+    /* position: relative; */
+}
+.under_line::after{
+    position: absolute;
+    content: "";
+    background-color: #0d6efd;
+    width: 90px ;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    
+}
+
+.under_line2{
+  /* position: relative; */
+}
+
+.under_line2::after{
+  position: absolute;
+  content: "";
+  background-color: #0d6efd;
+  width: 55px ;
+  height: 6px;
+  bottom: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icon{
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 0 0 10px blue;
+  /* border: 10px solid #0078ff; */
+  transition: all 0.6s;
+}
+.card:hover .icon{
+  background-color: #0078ff;
+  box-shadow: 0 0 0 10px #cde1f8;
+/* border: 10px solid #cde1f8; */
+}
+.icon i{
+  font-size: 2.2rem;
+}
+.Us{
+  background-image: linear-gradient(rgba(0, 120, 255,0.7),rgb(0, 120, 255,0.7)),url(../images/counters-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+background-size: cover;
+}
+.self_border{
+border: 10px solid #cde1f8;
+height: 5rem;
+width: 5rem;
+}
+.img_hover{
+  transition: all 0.7s;
+  
+}
+.p_width{
+  max-width: 750px;
+}
+.card:hover .img_hover{
+transform: scale(1.4);
+}
+.hello{
+  overflow: hidden;
+}
+.bg_image{
+  background-image: linear-gradient(rgba(0, 95, 197, 0.8),rgba(5, 124, 252, 0.8)),url(../images/overlay-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+.w_circle{
+  width: 15px !important;
+  height: 15px !important;
+}
+.bottom_value{
+  bottom: 18%;
+}
+.padding_value{
+  padding-block: 7rem;
+}
+.self_width{
+  width: 100%;
+
+
+}
+
+.modal_bg{
+  background-color: rgba(0,0,0,0.8);
+}
+.circle_size{
+  width: 40px;
+  height: 40px;
+}
+.card_a{
+  transition: all 0.4s;
+}
+.card_a:hover{
+color: #0078ff !important;
+}
+
+.contact_bg_img{
+  background-image: linear-gradient(rgba(74, 154, 240,0.8)
+  ,rgba(74, 154, 240,0.8)),url(../images/overlay-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.submit_hover{
+  transition: all 0.6s;
+}
+.submit_hover:hover{
+  box-shadow: 0 0 0 7px #cde1f8;
+}
+.contact_media li{
+  width: 35px;
+  height: 35px;
+  box-shadow: 0 0 0 3px #0078ff;
+transition: all 0.6s;
+  
+}
+.contact_media li:hover{
+  box-shadow: 0 0 0 3px #cde1f8;
+  background-color: #0078ff;
+}
+.bg_color{
+  background-color: #0062d3;
+}
+.under_line3{
+  position: relative;
+  font-size: 2.1rem;
+}
+.under_line3::after{
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 3px;
+  bottom: -12%;
+  left: 0;
+  background-color: #0062d3;
+}
